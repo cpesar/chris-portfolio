@@ -12,7 +12,7 @@ export default function Home(){
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
-      strings: ['Web Developer', 'Learner', 'Snowboarder', 'Wanderer', 'Friend', 'Human'],
+      strings: ['Web Developer', 'Student', 'Snowboarder', 'Wanderer', 'Friend', 'Human'],
     });
   },[]);
 
