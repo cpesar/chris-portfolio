@@ -48,7 +48,8 @@ import { NavLink } from 'react-router-dom';
 
 export default function NavBar(){
   return(
-    <header className='bg-blue-500'>
+    <header className='bg-blue-900'>
+    {/* // <header className='bg-black'> */}
       <div className='container mx-auto flex justify-between'>
         <nav className='flex'>
           <NavLink 
