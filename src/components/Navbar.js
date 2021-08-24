@@ -56,15 +56,15 @@ export default function NavBar(){
           to='/' 
           exact 
           activeClassName='text-white'
-          className='inline-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-blue-200 text-4xl '
+          className='inline-flex items-center py-6 px-3 my-6 rounded text-red-200 hover:text-blue-600'
           >
-            Pesar
+            Home
           </NavLink>
 
           <NavLink 
           to='/contact' 
           activeClassName='text-blue-200 bg-blue-300'
-          className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-blue-800' 
+          className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-blue-600' 
           >
           Contact
           </NavLink>
@@ -72,15 +72,23 @@ export default function NavBar(){
           <NavLink 
           to='/projects' 
           activeClassName='text-blue-200 bg-blue-300'
-          className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-blue-800'
+          className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-blue-600'
           >
             Projects
           </NavLink>
 
           <NavLink 
+          to='/about' 
+          activeClassName='text-blue-200 bg-blue-300'
+          className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-blue-600'
+          >
+            About
+          </NavLink>
+
+          <NavLink 
           to='/resume' 
           activeClassName='text-blue-200 bg-blue-300'
-          className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-blue-800'
+          className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-blue-600'
           >
             Resume
           </NavLink>
