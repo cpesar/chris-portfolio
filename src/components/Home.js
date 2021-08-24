@@ -25,7 +25,7 @@ export default function Home(){
       />
       
       <section className='relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8'>
-        <h2 className='text-6xl text-blue-500 font-bold'> Aloha I'm Chris Pesar</h2>
+        <h2 className='text-6xl text-blue-500 font-bold'> Aloha I'm Chris </h2>
         <h3 className='text-6xl text-blue-200 font-bold justify-content space-between'>
           <span ref={textRef}> </span>
         </h3>
