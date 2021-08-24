@@ -6,6 +6,10 @@
   ## Description
   My portfolio, built using React.js, that showcases my skills through previous projects.
   <br />
+  <br />
+
+  [View my portfolio here](https://pesar-react-portfolio.herokuapp.com/)
+
   
   
   
