@@ -2,7 +2,7 @@ import React from 'react';
 // import { NavLink } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
   return (
     <nav className='flex justify-between items-center h-16 bg-white text-black relative shadow-sm font-mono' 
     role='navigation'
@@ -10,7 +10,8 @@ const Navbar = () => {
       <Link to='/' exact className='pl-8'>
         Chris Pesar
       </Link>
-      <div className="pl-4 cursor-pointer md:hidden">
+      <div className="pl-4 cursor-pointer md:hidden"
+      onClick={toggle}>
         <svg className="w-6 h-6" fill="none" 
           stroke="currentColor" viewBox="0 0 24 24" 
           xmlns="http://www.w3.org/2000/svg"
