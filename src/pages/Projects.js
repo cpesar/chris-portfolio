@@ -3,11 +3,18 @@ import dock from '../images/dock-n-flock.png';
 import pizza from '../images/Pizza.png';
 import shop from '../images/Shop.png';
 import books from '../images/best-sellers.png';
-import weather from '../images/weather-app.png'
+import weather from '../images/weather-app.png';
+
+// import mountains from '../images/mtns-at-night.jpeg';
 
 const Projects = () => {
   return (
     <>
+     {/* <img 
+      src={mountains} 
+      alt='mountains at night' 
+      className='absolute object-cover w-full h-full' 
+    /> */}
     <div className='project-card'>
       <img src={pizza} alt='pizza-hunt-project' className='h-full rounded mb-20 shadow'/>
       <div className="center-content">

@@ -5,7 +5,7 @@ const Burger = ({ isOpen, toggle }) => {
   return (
     <div className={
       isOpen ?
-      'grid grid-rows-5 text-center items-center bg-blue-500' 
+      'grid grid-rows-5 text-center items-center bg-black text-white font-mono' 
       :'hidden'
     }
     onClick={toggle}
