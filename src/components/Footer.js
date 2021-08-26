@@ -1,14 +1,12 @@
 import React from 'react';
-import { Center } from '@chakra-ui/react'
-
 import { SocialIcon } from 'react-social-icons';
 
 
 export default function Footer(){
   return(
   
-    <Center >
-      
+    
+      <div className="flex justify-center items-center h-16 bg-blue-400 text-white">
       <SocialIcon 
         url='https://github.com/cpesar' 
         className='br-4' 
@@ -32,8 +30,8 @@ export default function Footer(){
         fgColor='#fff' 
         style={{ height:60, width:60 }} 
         />
-      
-    </Center>
+      </div>
+  
     
   )
 }

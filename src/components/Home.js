@@ -1,5 +1,5 @@
 import React from 'react';
-import mountains from '../Assets/mtns-at-night.jpeg';
+import mountains from '../images/mtns-at-night.jpeg';
 
 import { init } from 'ityped';
 import { useEffect, useRef } from 'react';
@@ -12,7 +12,7 @@ export default function Home(){
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
-      strings: ['Web Developer', 'Student', 'Snowboarder', 'Wanderer', 'Friend', 'Human'],
+      strings: ['Web Developer', 'Student', 'Snowboarder', 'Surfer', 'Wanderer', 'Friend', 'Human'],
     });
   },[]);
 
@@ -25,8 +25,8 @@ export default function Home(){
       />
       
       <section className='relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8'>
-        <h2 className='text-6xl text-blue-500 font-bold'> Aloha I'm Chris </h2>
-        <h3 className='text-6xl text-blue-200 font-bold justify-content space-between'>
+        <h2 className='text-6xl text-blue-500 font-mono'> Aloha I'm Chris </h2>
+        <h3 className='text-6xl text-blue-200 font-mono justify-content space-between'>
           <span ref={textRef}> </span>
         </h3>
       </section>
