@@ -1,5 +1,5 @@
 import React from 'react';
-import mountains from '../images/mtns-at-night.jpeg';
+import mountains from '../assets/mtns-at-night.jpeg';
 
 import { init } from 'ityped';
 import { useEffect, useRef } from 'react';

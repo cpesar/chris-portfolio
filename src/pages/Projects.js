@@ -1,9 +1,14 @@
 import React from 'react'
-import dock from '../images/dock-n-flock.png';
-import pizza from '../images/Pizza.png';
-import shop from '../images/Shop.png';
-import books from '../images/best-sellers.png';
-import weather from '../images/weather-app.png';
+
+import dock from '../images/docknflock.png';
+import pizza from '../images/pizza.png';
+import shop from '../images/shop.png';
+import books from '../images/bestsellers.png';
+import weather from '../images/weather.png';
+
+import google from '../images/googlebooks.png'
+import zoo from '../images/zoo.png'
+import thoughts from '../images/deepthoughts.png'
 
 // import mountains from '../images/mtns-at-night.jpeg';
 
@@ -64,6 +69,38 @@ const Projects = () => {
         <p className="mb-2">Never leave your house without knowing the weather again</p>
       </div>
     </div> 
+
+    <div className='project-card'>
+      <img src={google} alt='mern-shop-project' className='h-full rounded mb-20 shadow'/>
+      <div className="center-content">
+        <h2 className='text-2xl mb-2'>
+        <a href="https://the-book-store-2.herokuapp.com/">Weather-App</a>
+        </h2>
+        <p className="mb-2">Never leave your house without knowing the weather again</p>
+      </div>
+    </div> 
+
+    <div className='project-card'>
+      <img src={zoo} alt='mern-shop-project' className='h-full rounded mb-20 shadow'/>
+      <div className="center-content">
+        <h2 className='text-2xl mb-2'>
+        <a href="https://zoanimals.herokuapp.com/">Weather-App</a>
+        </h2>
+        <p className="mb-2">Never leave your house without knowing the weather again</p>
+      </div>
+    </div> 
+
+    <div className='project-card'>
+      <img src={thoughts} alt='mern-shop-project' className='h-full rounded mb-20 shadow'/>
+      <div className="center-content">
+        <h2 className='text-2xl mb-2'>
+        <a href="https://deep-thinker.herokuapp.com/">Weather-App</a>
+        </h2>
+        <p className="mb-2">Never leave your house without knowing the weather again</p>
+      </div>
+    </div> 
+
+
     </>
   )
 }

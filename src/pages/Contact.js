@@ -20,7 +20,7 @@
 
 import React from 'react'
 // import {Link} from 'react-router-dom';
-import mountains from '../images/mtns-at-night.jpeg';
+import mountains from '../assets/mtns-at-night.jpeg';
 
 const Contact = () => {
   return (
