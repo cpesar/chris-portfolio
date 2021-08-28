@@ -6,7 +6,7 @@ export default function Footer(){
   return(
   
     
-      <div className="flex justify-center items-center h-16 bg-black text-white">
+      <div className="flex justify-center items-center h-16 text-white">
       <SocialIcon 
         url='https://github.com/cpesar' 
         className='br-4' 
