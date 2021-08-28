@@ -7,9 +7,10 @@ const Projects = () => {
 
 
 
-  return <>
+  return (
+  < >
     <section 
-      className="py-20 px-5 bg-green-300 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:h-screen lg:pt-32">
+      className="py-20 px-5 bg-green-300 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:pt-32">
       {items.map((item) => {
         const {id, path, desc}=item
         return(
@@ -24,7 +25,7 @@ const Projects = () => {
 
   
   </>
-  
+  )
 }
 
 export default Projects
