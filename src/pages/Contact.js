@@ -1,41 +1,73 @@
-// import React from 'react';
+import React, { useState } from 'react';
+import { validateEmail } from '../utils/helpers';
 
-// import {
-//   FormControl,
-//   FormLabel,
-//   Input,
-//   // FormErrorMessage,
-//   FormHelperText,
-// } from "@chakra-ui/react"
+function ContactForm(){
+  // Hook to manage form data
+  const [formState, setFormState] = useState({ name: '', email: '', message: ''});
+  // Define the error message
+  const [errorMessage, setErrorMessage] = useState('');
+  // Destructure the formState object
+  const { name, email, message } = formState;
 
-// export default function Contact(){
-//   return (
-// <FormControl id="email">
-//   <FormLabel>Email address</FormLabel>
-//   <Input type="email" />
-//   <FormHelperText>We'll never share your email.</FormHelperText>
-// </FormControl>
-//   )
-// }
+  function handleSubmit(e){
+    e.preventDefault();
+    if(!errorMessage){
+      setFormState({ [e.target.name]: e.target.value })
+      console.log('Form', formState);
+    }
+  };
+  
+  // Define the handleChange function
+  function handleChange(e){
+    if (e.target.name === 'email'){
+      const isValid = validateEmail(e.target.value);
+      console.log(isValid); 
 
-import React from 'react'
-// import {Link} from 'react-router-dom';
-import mountains from '../assets/mtns-at-night.jpeg';
+      // isValid conditional statement
+      if(!isValid){
+        setErrorMessage('Your email address is invalid');
+      } else {
+        setErrorMessage('');
+      } 
+    } else {
+      if(!e.target.value.length){
+        setErrorMessage(`${e.target.name} is required`);
+      } else {
+        setErrorMessage('');
+      }
+    }
+  };
 
-const Contact = () => {
-  return (
-    <main>
-    <img 
-      src={mountains} 
-      alt='mountains at night' 
-      className='absolute object-cover w-full h-full' 
-    />
-    <section className='relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8'>
-      <h2 className='lg:text-6xl md:text-5xl sm:text-3xl text-3xl text-blue-500 font-mono'> The Contact Page </h2>
-      
+
+  return(
+    <section className="">
+      <h1>Contact me</h1>
+      <form id="contact-form" onSubmit={handleSubmit}>
+        <div>
+          <label htmlFor="name">Name</label>
+          <input type="text" defaultValue={name} onBlur={handleChange} name="name"/>
+        </div>
+
+        <div>
+          <label htmlFor="email">Email Address:</label>
+          <input type="email" defaultValue={email}  name="email" onBlur={handleChange}/>
+        </div>
+
+        <div>
+          <label htmlFor="message">Message:</label>
+          <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" />
+        </div>
+
+        {errorMessage && (
+          <div>
+            <p className="error-text">{errorMessage}</p>
+          </div>
+        )}
+
+        <button type="submit">Submit</button>
+      </form>
     </section>
-  </main>
   )
 }
 
-export default Contact
+export default ContactForm;
