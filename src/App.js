@@ -12,6 +12,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
+// import ProjectFiles from "./components/ProjectFiles";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)

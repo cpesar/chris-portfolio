@@ -38,7 +38,7 @@ export default function Home(){
   return <>
   <section className="Home">
     <div className="overlay flex flex-col items-center justify-center text-white px-5">
-      <h1 className="text-5xl font-mono text-right mb-5">
+      <h1 className="text-5xl font-mono text-right mb-10 lg:text-center lg:text-7xl lg:px-56">
         Aloha! I'm Chris 
         <span className="text-blue-500" ref={textRef}> </span> 
       </h1>
