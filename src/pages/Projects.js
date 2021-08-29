@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ProjectFiles from '../components/ProjectFiles';
 
 const Projects = () => {
-  const [items, setItems] = useState(ProjectFiles)
+  const [items] = useState(ProjectFiles)
 
 
 
