@@ -13,9 +13,17 @@ export default function Home(){
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
-      strings: ['Developer', 'Student', 'Snowboarder', 'Surfer', 'Wanderer', 'Friend', 'Human'],
+      strings: [
+        ' Developer', 
+        ' Student', 
+        ' Snowboarder', 
+        ' Surfer', 
+        ' Wanderer', 
+        ' Friend', 
+        ' Human'
+      ],
     });
-  },[]);
+  }, );
 
   // return(
   //   <main>
@@ -44,11 +52,14 @@ export default function Home(){
       </h1>
 
       <div className="items-center">
-        <Link to="/contact" 
+        <Link 
+          to="/contact" 
           className="mr-5 bg-blue-500 py-2 px-4 rounded-full font-mono hover:bg-blue-800">
             Contact
         </Link>
-        <Link to="/projects" 
+
+        <Link 
+          to="/projects" 
           className="mr-5 bg-white text-blue-500 py-2 px-4 rounded-full font-mono hover:bg-blue-800 hover:text-white">
             Projects
         </Link>
