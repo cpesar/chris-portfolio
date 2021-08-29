@@ -9,8 +9,8 @@ const Projects = () => {
 
   return (
   < >
-    <section 
-      className="project-page py-20 px-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:pt-32">
+    <section className="Projects">
+      <div className="overlay py-20 px-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:pt-32">
       {items.map((item) => {
         const {id, path, desc, site, repo}=item
         return(
@@ -23,6 +23,7 @@ const Projects = () => {
           </div>
         )
       })}
+      </div>
     </section>
 
   
