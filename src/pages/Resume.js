@@ -1,8 +1,6 @@
 
-
 import React from 'react'
-// import {Link} from 'react-router-dom';
-// import mountains from '../assets/mtns-at-night.jpeg';
+
 
 const Resume = () => {
   return<>
@@ -15,7 +13,7 @@ const Resume = () => {
             href ="https://docs.google.com/document/d/e/2PACX-1vRTJHyC39JKFP4CxhhwQB2l5X0L-7T45gHsHjy12dcWhZSX9Xm-yGYkoEixBLT8_QXhUDwoRVKHSrId/pub"
             >View my Resume</a>
         </section>
-        
+
         <section className="container flex flex-col items-center">
         <h1 className="text-blue-300 py-5 text-2xl">Front-end Proficiencies:</h1>
             <p class="w-1/3 text-white rounded-lg shadow">

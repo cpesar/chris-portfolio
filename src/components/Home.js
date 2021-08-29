@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import mountains from '../assets/mtns-at-night.jpeg';
 
 import { init } from 'ityped';
 import { useEffect, useRef } from 'react';
@@ -24,24 +23,6 @@ export default function Home(){
       ],
     });
   }, );
-
-  // return(
-  //   <main>
-  //     <img 
-  //       src={mountains} 
-  //       alt='mountains at night' 
-  //       className='absolute object-cover w-full h-full' 
-  //     />
-
-  //     <section className='relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8'>
-  //       <h2 className='lg:text-6xl md:text-5xl sm:text-3xl text-3xl text-blue-500 font-mono'> Aloha I'm Chris </h2>
-  //       <h3 className='lg:text-6xl md:text-5xl sm:text-3xl text-3xl text-blue-200 font-mono justify-content space-between'>
-  //         <span className="justify-center" ref={textRef}> </span>
-  //       </h3>
-  //     </section>
-      
-  //   </main>
-  // )
 
   return <>
   <section className="Home">

@@ -4,9 +4,6 @@ import ProjectFiles from '../components/ProjectFiles';
 const Projects = () => {
   const [items] = useState(ProjectFiles)
 
-
-
-
   return (
   < >
     <section className="Projects">

@@ -3,11 +3,10 @@ import Email from '../components/Email';
 import { validateEmail } from '../utils/helpers';
 
 const Contact = () => {
- // Hook to manage form data
+
  const [formState, setFormState] = useState({ name: '', email: '', message: ''});
- // Define the error message
  const [errorMessage, setErrorMessage] = useState('');
- // Destructure the formState object
+
  const { name, email, message } = formState;
 
  function handleSubmit(e){
@@ -18,13 +17,11 @@ const Contact = () => {
    }
  };
  
- // Define the handleChange function
  function handleChange(e){
    if (e.target.name === 'email'){
      const isValid = validateEmail(e.target.value);
      console.log(isValid); 
 
-     // isValid conditional statement
      if(!isValid){
        setErrorMessage('Your email address is invalid');
      } else {
