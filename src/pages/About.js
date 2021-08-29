@@ -8,9 +8,9 @@ const About = () => {
         <section className="container flex flex-col items-center py-40">
           <h1 className="text-blue-400 py-5 text-4xl">Get to know me:</h1>
             <p class=" text-blue-300 rounded-lg shadow text-2xl ">
-              Aloha!
+              
                 <span className="text-yellow-300"
-                > Chris Pesar</span> grew up in Maryland and has called Utah home for the last five years. Those who have worked with Chris know him as a detail oriented, results driven and passionate web developer with an extensive background in B2C sales, and marketing. Chris recently advanced his education by attending the coding bootcamp at the University of Utah which compliments his business degree from Towson University, making him a well-rounded hire with a lot to offer. When Chris is not in front of his computer coding you can find him on the beach or in the mountains.   
+                > Chris Pesar</span> grew up in Maryland and has called Utah home for the last five years. <p>Those who have worked with Chris know him as a detail oriented, results driven and passionate web developer with an extensive background in B2C sales, and marketing.</p> Chris recently advanced his education by attending the coding bootcamp at the University of Utah which compliments his business degree from Towson University, making him a well-rounded hire with a lot to offer.<p> When Chris is not in front of his computer coding you can find him on the beach or in the mountains.</p>
             </p>
         </section>
 
