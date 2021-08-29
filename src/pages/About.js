@@ -1,7 +1,7 @@
 // import React from 'react';
 
 // export default function About(){
-//   return <h1>My name is Chris Pesar. I am a web developer based in Salt Lake City, Utah. When I am not coding you can find me in the moutains or at the beach.</h1>
+//   return <h1>Aloha! My name is Chris Pesar. I am a web developer based in Salt Lake City, Utah. When I am not coding you can find me in the moutains or at the beach.</h1>
 // }
 
 
@@ -35,15 +35,20 @@ import React from 'react'
 const About = () => {
   return (
     <main>
-    {/* <img 
-      src={mountains} 
-      alt='mountains at night' 
-      className='absolute object-cover w-full h-full' 
-    /> */}
-    <section className='relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8'>
-      <h2 className='lg:text-6xl md:text-5xl sm:text-3xl text-3xl text-blue-500 font-mono'> The About Page </h2>
-      
+   
+    <section 
+      className='relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8'>
+        <h2 
+          className='lg:text-6xl md:text-5xl sm:text-3xl text-3xl text-blue-500 font-mono'> 
+            The About Page </h2>
     </section>
+
+    <div>
+      <ul className="list-disc">
+        <li>Front-End-Profeciencies</li>
+      </ul>
+    </div> 
+   
   </main>
   )
 }
