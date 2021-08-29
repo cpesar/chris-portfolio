@@ -16,7 +16,7 @@ const About = () => {
             </p>
         </section>
 
-        <section className="p-10">
+        <section>
           <a 
             className="mr-5 bg-yellow-300 py-2 px-4 rounded-full font-mono hover:bg-blue-500"
             href ="https://docs.google.com/document/d/e/2PACX-1vRTJHyC39JKFP4CxhhwQB2l5X0L-7T45gHsHjy12dcWhZSX9Xm-yGYkoEixBLT8_QXhUDwoRVKHSrId/pub"
