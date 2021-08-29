@@ -1,4 +1,5 @@
 import React from 'react'
+import Email from '../components/Email';
 
 const Contact = () => {
   return (
@@ -7,8 +8,7 @@ const Contact = () => {
         <div className="p-10">
           <h2 className="text-white font-mono mb-5 text-center text-4xl">Contact Me!</h2>
           <p className="text-white font-mono mb-5 text-center text-xl">
-            Please fill out the contact form or reach out to me at: 
-            <span> chrispesar1@gmail.com</span>
+            Please fill out the contact form 
           </p>
         </div>
 
@@ -40,8 +40,13 @@ const Contact = () => {
           ></textarea>
 
           <input type="submit" value="Submit" />
-
         </form>
+
+        <div className="p-10">
+          <p className="mr-5 bg-blue-300 py-2 px-4 rounded-full font-mono hover:bg-blue-800">
+            <Email label=" Drop me a line!" mailto="mailto:chrispesar1@gmail.com" />
+          </p>
+        </div>
       </div>
     </section>
 
