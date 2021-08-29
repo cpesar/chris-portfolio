@@ -37,6 +37,12 @@
   background-color: rgba(0,0,0,0.8);
 }
 
+.project-page{
+  /* height: 100vh; */
+  background: url('./assets/mtns-at-night.jpeg') no-repeat center/cover;
+  background-color: rgba(0,0,0,0.8);
+}
+
 .project-card {
   @apply flex flex-col justify-center items-center bg-white h-screen font-mono py-40
 }

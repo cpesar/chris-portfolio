@@ -10,14 +10,15 @@ const Projects = () => {
   return (
   < >
     <section 
-      className="py-20 px-5 bg-blue-800 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:pt-32">
+      className="project-page py-20 px-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:pt-32">
       {items.map((item) => {
         const {id, path, desc, site, repo}=item
         return(
           <div key={id}>
             <small className="block text-center text-white font-mono text-lg">{desc}</small>
+              <p src={site}></p>
+              <p src={repo}></p>
             <img src={path} alt={desc} className="p-5 bg-white rounded" />
-            <p></p>
             
           </div>
         )
