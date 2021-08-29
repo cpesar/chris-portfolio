@@ -55,6 +55,16 @@
   background-color: rgba(0,0,0,0.8);
 }
 
+.Resume{
+  /* height: 100vh; */
+  background: url('./assets/mtns-at-night.jpeg') no-repeat center/cover;
+}
+
+.Resume .overlay{
+  height: 100vh;
+  background-color: rgba(0,0,0,0.8);
+}
+
 
 
 .project-card {

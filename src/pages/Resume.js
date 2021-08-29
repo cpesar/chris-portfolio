@@ -1,25 +1,47 @@
 
 
 import React from 'react'
-// import {Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 // import mountains from '../assets/mtns-at-night.jpeg';
 
 const Resume = () => {
-  return (
-    <main>
-    {/* <img 
-      src={mountains} 
-      alt='mountains at night' 
-      className='absolute object-cover w-full h-full' 
-    /> */}
-    <section className='relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8'>
-      <h2 className='lg:text-6xl md:text-5xl sm:text-3xl text-3xl text-blue-500 font-mono'> 
-      The Resume Page 
-      </h2>
-      
-    </section>
-  </main>
-  )
+  return<>
+    <main className="Resume">
+      <div className="overlay p-5 flex flex-col items-center font-mono">
+        <section className="container flex flex-col items-center">
+        <h1 className="text-blue-300 py-5 text-2xl">Front-end Proficiencies:</h1>
+            <p class="w-1/3 text-white rounded-lg shadow">
+              <ul class=" divide-gray-100 text-xl flex flex-col items-center">
+                <li class="p-3">HTML</li>
+                <li class="p-3">CSS3</li>
+                <li class="p-3">TailwindCSS</li>
+                <li class="p-3">Responsive Design</li>
+                <li class="p-3">Javascript</li>
+                <li class="p-3">React</li>
+              </ul>
+            </p>
+        </section>
+
+        <section className="container flex flex-col items-center px-10">
+          <h1 className="text-blue-300 py-5 text-2xl">Back-end Proficiencies:</h1>
+            <p class="w-1/3 text-white rounded-lg shadow">
+              <ul class=" divide-gray-100 text-xl flex flex-col items-center">
+                <li class="p-3">Javascript</li>
+                <li class="p-3">Node.js</li>
+                <li class="p-3">Express.js</li>
+                <li class="p-3">MySQL, Sequelize</li>
+                <li class="p-3">NoSQQL, MongoDB</li>
+                <li class="p-3">API's</li>
+              </ul>
+            </p>
+        </section>
+
+        <section className="container flex flex-col items-center px-10">
+          <p className="text-blue-300 py-5 text-2xl">Extensive knowledge of GitHub, Heroku and Netlify</p>
+        </section>
+      </div>
+    </main>
+  </>
 }
 
 export default Resume
