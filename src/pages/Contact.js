@@ -39,7 +39,7 @@ const Contact = () => {
         <section className="p-10 flex flex-col items-center justify-center">
           <p className="mr-5 bg-yellow-300 py-2 px-4 rounded-full font-mono hover:bg-blue-500">
             <Email 
-              label=" Drop me a line!" 
+              label=" Email me!" 
               mailto="mailto:chrispesar1@gmail.com" />
           </p>
         </section>
