@@ -8,7 +8,7 @@
   <br />
   <br />
 
-  [View my portfolio here](https://stoic-cori-a80717.netlify.app/)
+  [View my portfolio here](https://chris-pesar-portfolio.netlify.app/)
 
   
   

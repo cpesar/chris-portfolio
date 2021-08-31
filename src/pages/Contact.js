@@ -64,7 +64,7 @@ const Contact = () => {
               />
 
             <input 
-              className="py-2 px-4 mb-5 rounded text-blue-500"
+              className="py-2 px-4 mb-5"
               placeholder="Enter your email: "
               value={email}
               onChange={(e) => setEmail(e.target.value)}
