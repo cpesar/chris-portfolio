@@ -10,7 +10,7 @@ const Resume = () => {
       <section className="p-10">
           <a 
             className="mr-5 bg-yellow-300 py-2 px-4 rounded-full font-mono hover:bg-blue-500"
-            href ="https://docs.google.com/document/d/e/2PACX-1vQ0RO4DKVAm7otyMYQRX1jCmfGpjy6EZkbMvEzLxoaUb2aciNUYddochsONDL4QeA/pub"
+            href ="https://docs.google.com/document/d/e/2PACX-1vSyzrQsWkbLsRpkvjTYARmAGx2SaKa2R7VRmOs333KoDFgwbIGXb1JBPP9b3yyf-ytMJrkJPF6liDBA/pub"
             >View my Resume</a>
         </section>
 
