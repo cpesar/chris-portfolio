@@ -10,7 +10,7 @@ const Resume = () => {
       <section className="p-10">
           <a 
             className="mr-5 bg-yellow-300 py-2 px-4 rounded-full font-mono hover:bg-blue-500"
-            href ="https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:a6c35f27-ece0-40ad-aa83-302e3a5daf15"
+            href ="https://www.dropbox.com/s/ehg29vc1uz5l2lw/Pesar%2C%20Chris%20CV%20.pdf?dl=0"
             >View my Resume</a>
         </section>
 
