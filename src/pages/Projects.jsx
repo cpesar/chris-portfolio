@@ -1,39 +1,33 @@
-import React, { useState } from 'react';
-import ProjectFiles from '../components/ProjectFiles';
+import React, { useState } from "react";
+import ProjectFiles from "../components/Projects/ProjectFiles";
 
 const Projects = () => {
-  const [items] = useState(ProjectFiles)
+  const [items] = useState(ProjectFiles);
 
   return (
-  < >
-    <section className="Projects">
-      <div className="overlay py-20 px-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:pt-32">
-      {items.map((item) => {
-        const {id, path, desc, site, repo}=item
-        return(
-          <div key={id}>
-            <small className="block text-center text-white font-mono text-lg">{desc}</small>
-              <p src={site}></p>
-              <p src={repo}></p>
-            <img src={path} alt={desc} className="p-5 bg-white rounded" />
-            
-          </div>
-        )
-      })}
-      </div>
-    </section>
+    <>
+      <section className="Projects">
+        <div className="overlay py-20 px-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:pt-32">
+          {items.map((item) => {
+            const { id, path, desc, site, repo } = item;
+            return (
+              <div key={id}>
+                <small className="block text-center text-white font-mono text-lg">
+                  {desc}
+                </small>
+                <p src={site}></p>
+                <p src={repo}></p>
+                <img src={path} alt={desc} className="p-5 bg-white rounded" />
+              </div>
+            );
+          })}
+        </div>
+      </section>
+    </>
+  );
+};
 
-  
-  </>
-  )
-}
-
-export default Projects
-
-
-
-
-
+export default Projects;
 
 // import React from 'react'
 
@@ -52,10 +46,10 @@ export default Projects
 // const Projects = () => {
 //   return (
 //     <>
-//      {/* <img 
-//       src={mountains} 
-//       alt='mountains at night' 
-//       className='absolute object-cover w-full h-full' 
+//      {/* <img
+//       src={mountains}
+//       alt='mountains at night'
+//       className='absolute object-cover w-full h-full'
 //     /> */}
 //     <div className='project-card'>
 //       <img src={pizza} alt='pizza-hunt-project' className='h-full rounded mb-20 shadow'/>
@@ -85,7 +79,7 @@ export default Projects
 //         </h2>
 //         <p className="mb-2">An interactive ecommerce website built with the MERN stack using Redux</p>
 //       </div>
-//     </div> 
+//     </div>
 
 //     <div className='project-card'>
 //       <img src={books} alt='mern-shop-project' className='h-full rounded mb-20 shadow'/>
@@ -95,7 +89,7 @@ export default Projects
 //         </h2>
 //         <p className="mb-2">Search for books using the Google Books API and add them to your favorites list</p>
 //       </div>
-//     </div> 
+//     </div>
 
 //     <div className='project-card'>
 //       <img src={weather} alt='mern-shop-project' className='h-full rounded mb-20 shadow'/>
@@ -105,7 +99,7 @@ export default Projects
 //         </h2>
 //         <p className="mb-2">Never leave your house without knowing the weather again</p>
 //       </div>
-//     </div> 
+//     </div>
 
 //     <div className='project-card'>
 //       <img src={google} alt='mern-shop-project' className='h-full rounded mb-20 shadow'/>
@@ -115,7 +109,7 @@ export default Projects
 //         </h2>
 //         <p className="mb-2">Never leave your house without knowing the weather again</p>
 //       </div>
-//     </div> 
+//     </div>
 
 //     <div className='project-card'>
 //       <img src={zoo} alt='mern-shop-project' className='h-full rounded mb-20 shadow'/>
@@ -125,7 +119,7 @@ export default Projects
 //         </h2>
 //         <p className="mb-2">Never leave your house without knowing the weather again</p>
 //       </div>
-//     </div> 
+//     </div>
 
 //     <div className='project-card'>
 //       <img src={thoughts} alt='mern-shop-project' className='h-full rounded mb-20 shadow'/>
@@ -135,8 +129,7 @@ export default Projects
 //         </h2>
 //         <p className="mb-2">Never leave your house without knowing the weather again</p>
 //       </div>
-//     </div> 
-
+//     </div>
 
 //     </>
 //   )
