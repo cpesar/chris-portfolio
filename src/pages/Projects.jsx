@@ -1,33 +1,36 @@
-import React, { useState } from "react";
-import ProjectFiles from "../components/Projects/ProjectFiles";
+// import React, { useState } from "react";
+// import ProjectFiles from "../components/Projects/ProjectFiles";
 
-const Projects = () => {
-  const [items] = useState(ProjectFiles);
+// const Projects = () => {
+//   const [items] = useState(ProjectFiles);
 
-  return (
-    <>
-      <section className="Projects">
-        <div className="overlay py-20 px-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:pt-32">
-          {items.map((item) => {
-            const { id, path, desc, site, repo } = item;
-            return (
-              <div key={id}>
-                <small className="block text-center text-white font-mono text-lg">
-                  {desc}
-                </small>
-                <p src={site}></p>
-                <p src={repo}></p>
-                <img src={path} alt={desc} className="p-5 bg-white rounded" />
-              </div>
-            );
-          })}
-        </div>
-      </section>
-    </>
-  );
-};
+//   return (
+//     <>
+//       <section className="Projects">
+//         <div className="overlay py-20 px-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:pt-32">
+//           {items.map((item) => {
+//             const { id, path, desc, site, repo } = item;
+//             return (
+//               <div key={id}>
+//                 <small className="block text-center text-white font-mono text-lg">
+//                   {desc}
+//                 </small>
+//                 <p src={site}></p>
+//                 <p src={repo}></p>
+//                 <img src={path} alt={desc} className="p-5 bg-white rounded" />
+//               </div>
+//             );
+//           })}
+//         </div>
+//       </section>
+//     </>
+//   );
+// };
 
-export default Projects;
+// export default Projects;
+
+// ----------------------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------------------------------
 
 // import React from 'react'
 
