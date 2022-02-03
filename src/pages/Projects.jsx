@@ -1,3 +1,34 @@
+// import React from "react";
+
+// // import { Card, Col, Row } from "antd";
+
+// import ProjectFiles from "../components/Projects/ProjectFiles";
+
+// const Projects = () => {
+//   return (
+//     <>
+//       <div className="site-card-wrapper">
+//         {ProjectFiles.map((project, id) => (
+//           <div key={id}>
+//             <h3>{project.desc}</h3>
+//             <p>
+//               <img src={project.path} alt="projectimage"></img>
+//             </p>
+//             <p>{project.site}</p>
+//             <p>{project.repo}</p>
+//           </div>
+//         ))}
+//       </div>
+//     </>
+//   );
+// };
+
+// export default Projects;
+
+// ============================================================================
+// ============================================================================
+// ============================================================================
+
 // import React, { useState } from "react";
 // import ProjectFiles from "../components/Projects/ProjectFiles";
 
@@ -29,113 +60,143 @@
 
 // export default Projects;
 
-// ----------------------------------------------------------------------------------------------------------------------
-// ----------------------------------------------------------------------------------------------------------------------
+// ============================================================================
+// ============================================================================
+// ============================================================================
 
-// import React from 'react'
+// import React from "react";
 
-// import dock from '../images/docknflock.png';
-// import pizza from '../images/pizza.png';
-// import shop from '../images/shop.png';
-// import books from '../images/bestsellers.png';
-// import weather from '../images/weather.png';
+// import ProjectFiles from "../components/Projects/ProjectFiles";
 
-// import google from '../images/googlebooks.png'
-// import zoo from '../images/zoo.png'
-// import thoughts from '../images/deepthoughts.png'
+// import "antd/dist/antd.css";
+// import { Card } from "antd";
 
-// // import mountains from '../images/mtns-at-night.jpeg';
+// const { Meta } = Card;
+
+// const Projects = () => {
+
+//   ProjectFiles.map((project, id) => (
+//       key=id,
+//       description=project.desc,
+//       project.path,
+//       project.site,
+//       project.repo
+//   )
+
+//   return (
+//     <Card
+//       hoverable
+//       style={{ width: 240 }}
+//       cover={<img alt="project" src={ProjectFiles.path} />}
+//     >
+//       <Meta title={ProjectFiles.desc} description={ProjectFiles.repo} />
+//     </Card>
+//   );
+// };
+
+// export default Projects;
+
+// ============================================================================
+// ============================================================================
+// ============================================================================
+
+// import React from "react";
+
+// import "antd/dist/antd.css";
+// import { Carousel } from "antd";
+
+// import ProjectFiles from "../components/Projects/ProjectFiles";
+
+// const contentStyle = {
+//   height: "160px",
+//   color: "#fff",
+//   lineHeight: "160px",
+//   textAlign: "center",
+//   background: "#364d79",
+// };
 
 // const Projects = () => {
 //   return (
 //     <>
-//      {/* <img
-//       src={mountains}
-//       alt='mountains at night'
-//       className='absolute object-cover w-full h-full'
-//     /> */}
-//     <div className='project-card'>
-//       <img src={pizza} alt='pizza-hunt-project' className='h-full rounded mb-20 shadow'/>
-//       <div className="center-content">
-//         <h2 className='text-2xl mb-2'>
-//         <a href="https://pizza-hunting.herokuapp.com/">Pizza-Hunt</a>
-//         </h2>
-//         <p className="mb-2">A social app for making friends and designing pizzas</p>
-//       </div>
-//     </div>
+//   <Carousel autoplay>
+//   <div>
+//     <h3 style={contentStyle}>1</h3>
+//   </div>
+//   <div>
+//     <h3 style={contentStyle}>2</h3>
+//   </div>
+//   <div>
+//     <h3 style={contentStyle}>3</h3>
+//   </div>
+//   <div>
+//     <h3 style={contentStyle}>4</h3>
+//   </div>
+// </Carousel>
+// </>
 
-//     <div className='project-card'>
-//       <img src={dock} alt='dock-n-flock-project' className='h-full rounded mb-20 shadow'/>
-//       <div className="center-content">
-//         <h2 className='text-2xl mb-2'>
-//         <a href="https://dock-and-flock.herokuapp.com/">Dock-N-Flock</a>
-//         </h2>
-//         <p className="mb-2">Search for events and parking all in one place</p>
-//       </div>
-//     </div>
-
-//     <div className='project-card'>
-//       <img src={shop} alt='mern-shop-project' className='h-full rounded mb-20 shadow'/>
-//       <div className="center-content">
-//         <h2 className='text-2xl mb-2'>
-//         <a href="https://the-online-store.herokuapp.com/">Shop-Shop</a>
-//         </h2>
-//         <p className="mb-2">An interactive ecommerce website built with the MERN stack using Redux</p>
-//       </div>
-//     </div>
-
-//     <div className='project-card'>
-//       <img src={books} alt='mern-shop-project' className='h-full rounded mb-20 shadow'/>
-//       <div className="center-content">
-//         <h2 className='text-2xl mb-2'>
-//         <a href="https://cpesar.github.io/the-best-sellers/">The Best Sellers</a>
-//         </h2>
-//         <p className="mb-2">Search for books using the Google Books API and add them to your favorites list</p>
-//       </div>
-//     </div>
-
-//     <div className='project-card'>
-//       <img src={weather} alt='mern-shop-project' className='h-full rounded mb-20 shadow'/>
-//       <div className="center-content">
-//         <h2 className='text-2xl mb-2'>
-//         <a href="https://cpesar.github.io/weather-dashboard-refactor/">Weather-App</a>
-//         </h2>
-//         <p className="mb-2">Never leave your house without knowing the weather again</p>
-//       </div>
-//     </div>
-
-//     <div className='project-card'>
-//       <img src={google} alt='mern-shop-project' className='h-full rounded mb-20 shadow'/>
-//       <div className="center-content">
-//         <h2 className='text-2xl mb-2'>
-//         <a href="https://the-book-store-2.herokuapp.com/">Weather-App</a>
-//         </h2>
-//         <p className="mb-2">Never leave your house without knowing the weather again</p>
-//       </div>
-//     </div>
-
-//     <div className='project-card'>
-//       <img src={zoo} alt='mern-shop-project' className='h-full rounded mb-20 shadow'/>
-//       <div className="center-content">
-//         <h2 className='text-2xl mb-2'>
-//         <a href="https://zoanimals.herokuapp.com/">Weather-App</a>
-//         </h2>
-//         <p className="mb-2">Never leave your house without knowing the weather again</p>
-//       </div>
-//     </div>
-
-//     <div className='project-card'>
-//       <img src={thoughts} alt='mern-shop-project' className='h-full rounded mb-20 shadow'/>
-//       <div className="center-content">
-//         <h2 className='text-2xl mb-2'>
-//         <a href="https://deep-thinker.herokuapp.com/">Weather-App</a>
-//         </h2>
-//         <p className="mb-2">Never leave your house without knowing the weather again</p>
-//       </div>
-//     </div>
-
-//     </>
 //   )
-// }
+// );
 
-// export default Projects
+// export default Projects;
+
+// import React from "react";
+
+// // import { Card, Col, Row } from "antd";
+
+// import ProjectFiles from "../components/Projects/ProjectFiles";
+
+// const Projects = () => {
+//   return (
+//     <>
+//       <div className="site-card-wrapper">
+//         {ProjectFiles.map((project, id) => (
+//           <div key={id}>
+//             <h3>{project.desc}</h3>
+//             <p>
+//               <img src={project.path} alt="projectimage"></img>
+//             </p>
+//             <p>{project.site}</p>
+//             <p>{project.repo}</p>
+//           </div>
+//         ))}
+//       </div>
+//     </>
+//   );
+// };
+
+// export default Projects;
+
+// ============================================================================
+// ============================================================================
+// ============================================================================
+
+import React from 'react';
+
+import ProjectFiles from '../components/Projects/ProjectFiles';
+
+function Projects(props) {
+  const project = (
+    <ul>
+      {ProjectFiles.props.map(project => (
+        <li key={project.id}>{project.desc}</li>
+      ))}
+    </ul>
+  );
+
+  const path = ProjectFiles.props.map(project => (
+    <div key={project.id}>
+      <h3>{project.path}</h3>
+      <p>{project.site}</p>
+    </div>
+  ));
+
+  return (
+    <div>
+      {project}
+      <hr />
+      {path}
+    </div>
+  );
+}
+
+export default Projects;
