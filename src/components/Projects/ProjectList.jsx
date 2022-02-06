@@ -81,13 +81,10 @@ const ProjectList = ({ category }) => {
         {currentProjects.map((image, i) => (
           <img
             src={require(`../../assets/small/${category}/${i}.png`).default}
-            // src={require(`../../assets/large/${category}/${i}.jpg`)}
-            // alt="current-category"
             alt={image.name}
             className='img-thumbnail mx-1'
             onClick={() => toggleModal(image, i)}
             key={image.name}
-            // key="current-category"
           />
         ))}
         <p></p>

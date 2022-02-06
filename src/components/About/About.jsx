@@ -9,7 +9,7 @@ const About = () => {
             <h1 className='text-blue-500 py-5 text-4xl'>
               Get to know <span className='text-yellow-300'> Chris</span>
             </h1>
-            <p class=' text-blue-300 rounded-lg shadow text-2xl '>
+            <p className=' text-blue-300 rounded-lg shadow text-2xl '>
               <span className='text-yellow-300'> Chris</span> grew up in
               Maryland and has called Utah home for the last five years. Those
               who have worked with Chris know him as a detail oriented, results
@@ -21,7 +21,9 @@ const About = () => {
               front of his computer coding you can find him on the beach or in
               the mountains.
             </p>
-            <p class=' text-blue-500 rounded-lg shadow text-3xl p-5'>Mahalo!</p>
+            <p className=' text-blue-500 rounded-lg shadow text-3xl p-5'>
+              Mahalo!
+            </p>
           </section>
 
           <section>
