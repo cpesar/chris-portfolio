@@ -5,8 +5,8 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background: center/cover no-repeat;
-  background-image: url('./assets/Images/Mountains.png');
+  background: center;
+  background-image: url('./assets//Images//Mountains.png');
 }
 
 @media (max-width: 480px) {

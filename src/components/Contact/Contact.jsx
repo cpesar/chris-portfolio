@@ -1,92 +1,89 @@
-// import React, { useState } from "react";
-// import Email from "../components/Contact/Email";
-// // import { validateEmail } from '../utils/helpers';
-// import { db } from "../firebase";
-// import { collection, addDoc } from "@firebase/firestore";
+import React, { useState } from 'react';
 
-// const Contact = () => {
-//   const [name, setName] = useState("");
-//   const [email, setEmail] = useState("");
-//   const [message, setMessage] = useState("");
+import { validateEmail } from '../../utils/helpers';
 
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     addDoc(collection(db, "updated-contacts"), {
-//       name: name,
-//       email: email,
-//       message: message,
-//     })
-//       .then(() => {
-//         alert("Message submitted 👍");
-//       })
-//       .catch((error) => {
-//         alert(error.message);
-//       });
+function ContactForm() {
+  const [formState, setFormState] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
 
-//     setName("");
-//     setEmail("");
-//     setMessage("");
-//   };
+  const [errorMessage, setErrorMessage] = useState('');
 
-//   return (
-//     <main className="Home">
-//       <section className="overlay">
-//         <section className="p-10 flex flex-col items-center justify-center">
-//           <p className="mr-5 bg-yellow-300 py-2 px-4 rounded-full font-mono hover:bg-blue-500">
-//             <Email label=" Email me" mailto="mailto:chrispesar1@gmail.com" />
-//           </p>
-//         </section>
+  const { name, email, message } = formState;
 
-//         <section
-//           className=" flex flex-col items-center justify-center"
-//           onSubmit={handleSubmit}
-//         >
-//           <div className="p-10">
-//             <h2 className="text-white font-mono mb-5 text-center text-4xl">
-//               Contact Me!
-//             </h2>
-//             <p className="text-white font-mono mb-5 text-center text-xl">
-//               Please fill out the contact form
-//             </p>
-//           </div>
+  function handleSubmit(e) {
+    e.preventDefault();
+    if (!errorMessage) {
+      setFormState({ [e.target.name]: e.target.value });
+      console.log('Form', formState);
+    }
+  }
 
-//           <form name="Contact Form" className=" flex flex-col">
-//             <input
-//               className="py-2 px-4 mb-5"
-//               placeholder="Enter your name: "
-//               value={name}
-//               onChange={(e) => setName(e.target.value)}
-//               required
-//             />
+  function handleChange(e) {
+    if (e.target.name === 'email') {
+      const isValid = validateEmail(e.target.value);
+      console.log(isValid);
 
-//             <input
-//               className="py-2 px-4 mb-5"
-//               placeholder="Enter your email: "
-//               value={email}
-//               onChange={(e) => setEmail(e.target.value)}
-//               required
-//             />
+      if (!isValid) {
+        setErrorMessage('Your email address is invalid');
+      } else {
+        setErrorMessage('');
+      }
+    } else {
+      if (!e.target.value.length) {
+        setErrorMessage(`${e.target.name} is required`);
+      } else {
+        setErrorMessage('');
+      }
+    }
+  }
 
-//             <textarea
-//               cols="40"
-//               rows="15"
-//               placeholder="Enter Message: "
-//               value={message}
-//               onChange={(e) => setMessage(e.target.value)}
-//               required
-//             ></textarea>
+  return (
+    <section>
+      <h1>Contact me</h1>
+      <form id='contact-form' onSubmit={handleSubmit}>
+        <div>
+          <label htmlFor='name'>Name</label>
+          <input
+            type='text'
+            defaultValue={name}
+            onBlur={handleChange}
+            name='name'
+          />
+        </div>
 
-//             <button
-//               className="mr-5 ml-5 m-5 bg-yellow-300 py-5 px-10 rounded-full font-mono hover:bg-blue-500"
-//               type="submit"
-//             >
-//               Drop me a line!
-//             </button>
-//           </form>
-//         </section>
-//       </section>
-//     </main>
-//   );
-// };
+        <div>
+          <label htmlFor='email'>Email Address:</label>
+          <input
+            type='email'
+            defaultValue={email}
+            name='email'
+            onBlur={handleChange}
+          />
+        </div>
 
-// export default Contact;
+        <div>
+          <label htmlFor='message'>Message:</label>
+          <textarea
+            name='message'
+            defaultValue={message}
+            onBlur={handleChange}
+            rows='5'
+          />
+        </div>
+
+        {errorMessage && (
+          <div>
+            <p className='error-text'>{errorMessage}</p>
+          </div>
+        )}
+
+        <button type='submit'>Submit</button>
+      </form>
+    </section>
+  );
+}
+
+export default ContactForm;
