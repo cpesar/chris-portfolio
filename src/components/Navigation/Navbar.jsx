@@ -48,6 +48,7 @@ const Navbar = ({ toggle }) => {
 };
 
 export default Navbar;
+//======================================================================================
 
 // import React, { useEffect } from "react";
 // import { capitalizeFirstLetter } from "../../utils/helpers.js";
