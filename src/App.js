@@ -2,17 +2,16 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 
 // Components
-import Home from "./components/Home";
-import Footer from "./components/Footer";
+import Home from "./components/Dashboard/Home.jsx";
+import Footer from "./components/Dashboard/Footer.jsx";
 import Navbar from "./components/Navigation/Navbar.jsx";
 import Burger from "./components/Navigation/Burger.jsx";
 
 // Pages
 import About from "./components/About/About.jsx";
-import Gallery from "./components/Projects/Gallery.jsx";
-// import Portfolio from "./pages/Portfolio";
-import Resume from "./pages/Resume";
-import Contact from "./pages/Contact";
+import Resume from "./components/About/Resume.jsx";
+import Contact from "./components/Contact/Contact.jsx";
+// import Gallery from "./components/Projects/Gallery.jsx";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,7 +41,7 @@ function App() {
         <Route component={Home} path="/" exact />
         <Route component={About} path="/about" />
 
-        <Route component={Gallery} path="/projects" />
+        {/* <Route component={Gallery} path="/projects" /> */}
         <Route component={Resume} path="/resume" />
         <Route component={Contact} path="/contact" />
       </Switch>

@@ -1,53 +1,56 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.Home{
+.Home {
   height: 100vh;
-  background: url('./assets/mtns-at-night.jpeg') no-repeat center/cover;
+  background: url("./assets/mtns-at-night.jpeg") no-repeat center/cover;
+
+  /* background-image: url("https://images.unsplash.com/photo-1581947454454-daf5f7200128?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bW91bnRhaW5zJTIwYnklMjBuaWdodHxlbnwwfHwwfHw%3D&w=1000&q=80")
+    no-repeat center/cover;
+
+  background-size: conver;
+  background-position: center;
+  filter: contrast(1.35) brightness(0.65); */
 }
-.Home .overlay{
+.Home .overlay {
   height: 100vh;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-
-.Projects{
-  background: url('./assets/mtns-at-night.jpeg') no-repeat center/cover;
+.Projects {
+  background: url("./assets/mtns-at-night.jpeg") no-repeat center/cover;
 }
 
-.Projects .overlay{
-  background-color: rgba(0,0,0,0.8);
+.Projects .overlay {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.About{
+.About {
   /* height: 100vh; */
-  background: url('./assets/mtns-at-night.jpeg') no-repeat center/cover;
+  background: url("./assets/mtns-at-night.jpeg") no-repeat center/cover;
   /* background-color: rgba(0,0,0,0.8); */
 }
 
-.About .overlay{
+.About .overlay {
   height: 100vh;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.Resume{
+.Resume {
   /* height: 100vh; */
-  background: url('./assets/mtns-at-night.jpeg') no-repeat center/cover;
+  background: url("./assets/mtns-at-night.jpeg") no-repeat center/cover;
 }
 
-.Resume .overlay{
+.Resume .overlay {
   height: 100vh;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
-
-
 
 .project-card {
-  @apply flex flex-col justify-center items-center bg-white h-screen font-mono py-40
+  @apply flex flex-col justify-center items-center bg-white h-screen font-mono py-40;
 }
 
 .center-content {
-  @apply flex flex-col justify-center items-center
+  @apply flex flex-col justify-center items-center;
 }
